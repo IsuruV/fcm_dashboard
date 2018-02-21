@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, Button, FormControl } from 'react-bootstrap';
 class FcmFilter extends Component{
     render(){
         return(
-            <Navbar style={{ width: '80%', margin: '0 auto' }}>
+            <Navbar >
             <Nav>
             <NavItem>
                 <NavDropdown eventKey="4" title="Compare" id="nav-dropdown">
@@ -24,6 +24,14 @@ class FcmFilter extends Component{
                 </NavDropdown>
             </NavItem>
             </Nav>
+            <Navbar.Collapse>
+                <Navbar.Form pullRight>
+                    <FormGroup>
+                        <FormControl type="text" placeholder="Search" />
+                    </FormGroup>{' '}
+                    <Button type="submit">Submit</Button>
+                </Navbar.Form>
+            </Navbar.Collapse>
             </Navbar>
             )
     }

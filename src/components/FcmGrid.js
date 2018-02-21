@@ -6,7 +6,7 @@ import { Grid, Cell } from 'react-mdl';
          return(
                 
                  <Grid className="fcm-grid" style={{ width: '80%', margin: '0 auto' }}>
-                    {this.props.children.map((item) => <Cell col={4}>{item}</Cell>)}
+                    {this.props.children.map((item) => <Cell col={3} style={{paddingLeft:'10'}}>{item}</Cell>)}
                  </Grid>
              )
      }

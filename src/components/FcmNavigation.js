@@ -6,12 +6,12 @@ class FcmNavigation extends Component{
         return(
             <div style={{position: 'absolut'}}>
     <Layout fixedHeader>
-        <Header title={<span><span style={{ color: '#ddd' }}></span><strong>FCM</strong></span>}>
+        <Header title={<span><span style={{ color: '#ddd' }}></span><strong>FCM Indicators</strong></span>}>
             <Navigation>
                 <a href="#">Link</a>
                 <a href="#">Link</a>
                 <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#">Sign Out</a>
             </Navigation>
         </Header>
         <Drawer title="Title">
